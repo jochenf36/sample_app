@@ -1,11 +1,16 @@
 source 'https://rubygems.org'
 
+# specify ruby version as heroku told so
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '1.3.5'
+  gem 'sqlite3', '1.3.7'
+
   # Use rspec as the test framework
   gem 'rspec-rails', '2.10.0'
 end
