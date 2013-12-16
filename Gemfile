@@ -8,11 +8,14 @@ gem 'rails', '4.0.2'
 
 
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '1.3.7'
+  # Use postgressql as the database for Active Record
+  gem 'pg', '0.15.1'
+
+  # used by rspec to automate testing
+    gem 'guard-rspec', '0.5.5'
 
   # Use rspec as the test framework
-  gem 'rspec-rails', '2.10.0'
+  gem 'rspec-rails', '~>2.14.0'
 end
 
 # Gems used only for assets and not required
@@ -28,6 +31,9 @@ end
 
 group :test do
   gem 'capybara', '1.1.2'
+    gem 'rb-fsevent', '~> 0.9.1', :require => false
+  gem 'growl', '1.0.3'
+    gem 'spork', '~> 1.0rc'
 end
 
 group :production do

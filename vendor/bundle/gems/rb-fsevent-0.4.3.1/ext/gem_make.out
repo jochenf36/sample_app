@@ -1,0 +1,4 @@
+/Users/jochen/.rbenv/versions/2.0.0-p247/bin/ruby extconf.rb 
+creating Makefile
+extconf.rb:7: warning: Insecure world writable dir /usr/bin/drush in PATH, mode 040777
+extconf.rb:21:in `<main>': Only Darwin systems greater than 8 (Mac OS X 10.5+) are supported (RuntimeError)
