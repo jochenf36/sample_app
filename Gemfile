@@ -5,7 +5,7 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-
+gem 'bootstrap-sass', '~>2.0.0'
 
 group :development, :test do
   # Use postgressql as the database for Active Record
@@ -33,7 +33,6 @@ group :test do
   gem 'capybara', '1.1.2'
     gem 'rb-fsevent', '~> 0.9.1', :require => false
   gem 'growl', '1.0.3'
-    gem 'spork', '~> 1.0rc'
 end
 
 group :production do
