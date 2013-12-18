@@ -6,7 +6,9 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '~>2.0.0'
+  gem 'protected_attributes'
 
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
   # Use postgressql as the database for Active Record
@@ -17,6 +19,11 @@ group :development, :test do
 
   # Use rspec as the test framework
   gem 'rspec-rails', '~>2.14.0'
+
+
+
+  gem 'annotate', '~> 2.6.0'
+
 end
 
 # Gems used only for assets and not required
